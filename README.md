@@ -119,7 +119,7 @@ namespace ns5 {
         return 1 + val;
     }
     int add(int S, int T) {
-        if (T == 0)
+        if (T)
             return succ(add(S, T-1));
         else
             return S; // T == 0
